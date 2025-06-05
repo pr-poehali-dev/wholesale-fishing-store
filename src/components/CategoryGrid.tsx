@@ -29,7 +29,7 @@ const categories = [
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
   },
   {
-    title: "Лески и шнуры",
+    title: "Лески",
     description: "Монофил, флюорокарбон, плетенка",
     icon: "Minus",
     itemCount: "600+",
