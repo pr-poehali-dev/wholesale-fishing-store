@@ -11,9 +11,11 @@ const Header = () => {
             <Icon name="Fish" className="h-8 w-8 text-blue-600 mr-3" />
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
-                Рыболовный-Оптом.РФ
+                Рыбалка-Оптом.РФ
               </h1>
-              <p className="text-xs text-gray-500">Рыболовные товары оптом</p>
+              <p className="text-xs text-gray-500">
+                Оптовые поставки по всей России
+              </p>
             </div>
           </div>
 
@@ -47,13 +49,13 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden lg:block text-right">
               <p className="text-sm font-semibold text-gray-900">
-                +7 (800) 123-45-67
+                +7 (495) 123-45-67
               </p>
-              <p className="text-xs text-gray-500">Звонок бесплатный</p>
+              <p className="text-xs text-gray-500">Работаем с 9:00 до 18:00</p>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
               <Icon name="Phone" className="h-4 w-4 mr-2" />
-              Заказать звонок
+              Получить прайс
             </Button>
           </div>
         </div>

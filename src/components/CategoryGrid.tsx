@@ -6,67 +6,75 @@ import Icon from "@/components/ui/icon";
 const categories = [
   {
     title: "Удилища",
-    description: "Спиннинги, фидеры, поплавочные",
+    description: "Спиннинги, фидеры, поплавочные, карповые",
     icon: "Zap",
-    itemCount: "1500+",
+    itemCount: "2500+",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Спиннинги", "Фидеры", "Поплавочные", "Карповые"],
   },
   {
     title: "Катушки",
-    description: "Спиннинговые, карповые, фидерные",
+    description: "Безынерционные, мультипликаторы, нахлыстовые",
     icon: "RotateCcw",
-    itemCount: "800+",
+    itemCount: "1800+",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Безынерционные", "Мультипликаторы", "Нахлыстовые"],
   },
   {
     title: "Приманки",
-    description: "Воблеры, блесны, силикон",
+    description: "Воблеры, блесны, силикон, мормышки",
     icon: "Target",
-    itemCount: "2500+",
+    itemCount: "5000+",
     image:
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Воблеры", "Блесны", "Силикон", "Мормышки"],
   },
   {
-    title: "Лески",
+    title: "Лески и шнуры",
     description: "Монофил, флюорокарбон, плетенка",
     icon: "Minus",
-    itemCount: "600+",
+    itemCount: "800+",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Монофил", "Флюорокарбон", "Плетенка"],
   },
   {
     title: "Крючки и грузила",
-    description: "Одинарные, двойники, тройники",
+    description: "Одинарные, двойники, тройники, грузила",
     icon: "Anchor",
-    itemCount: "1200+",
+    itemCount: "1500+",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Одинарные", "Двойники", "Грузила", "Поводки"],
   },
   {
-    title: "Аксессуары",
-    description: "Сумки, садки, подставки",
-    icon: "Package",
-    itemCount: "900+",
+    title: "Рыболовные сети",
+    description: "Кастинговые, жаберные, подъемники",
+    icon: "Grid3x3",
+    itemCount: "400+",
     image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Кастинговые", "Жаберные", "Подъемники"],
   },
   {
     title: "Прикормки и насадки",
-    description: "Сухие смеси, ароматизаторы",
+    description: "Сухие смеси, ароматизаторы, живые насадки",
     icon: "Wheat",
-    itemCount: "400+",
+    itemCount: "600+",
     image:
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Прикормки", "Ароматизаторы", "Насадки"],
   },
   {
-    title: "Эхолоты и электроника",
-    description: "Эхолоты, GPS, сигнализаторы",
-    icon: "Radar",
-    itemCount: "200+",
+    title: "Аксессуары",
+    description: "Сумки, садки, подставки, снасти",
+    icon: "Package",
+    itemCount: "1200+",
     image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&auto=format",
+    subcategories: ["Сумки", "Садки", "Подставки", "Инструменты"],
   },
 ];
 
@@ -93,8 +101,9 @@ const CategoryGrid = () => {
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img
                   src={category.image}
-                  alt={category.title}
+                  alt={`Категория ${category.title} - ${category.description}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <CardHeader className="pb-3">
