@@ -10,7 +10,9 @@ const Header = () => {
           <div className="flex items-center">
             <Icon name="Fish" className="h-8 w-8 text-blue-600 mr-3" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">РыбОпт</h1>
+              <h1 className="text-2xl font-bold text-gray-900">
+                Рыболовный-Оптом.РФ
+              </h1>
               <p className="text-xs text-gray-500">Рыболовные товары оптом</p>
             </div>
           </div>
